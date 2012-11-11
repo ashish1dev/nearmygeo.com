@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<title>Demo - Expandable - Collpasible Layer with Jquery</title> 
+<script type="text/javascript" src="collapsableDiv/jquery.min.js"></script> 
+<script type="text/javascript"> 
+jQuery(document).ready(function() {
+  jQuery(".content").hide();
+  //toggle the componenet with class msg_body
+  jQuery(".heading").click(function()
+  {
+	if(this.id=="h1"){
+		document.getElementById("t1").innerHTML="<h1>HI</h1><br/>huhuhuhuhuh<br/>huihihhhh<input type='button' onClick='load()' value='load'/>";
+	}
+	
+    jQuery(this).next(".content").slideToggle(300);
+	
+  });
+});
+
+function load(){
+alert('hi');
+}
+
+</script>
+<style type="text/css"> 
+body {
+	margin: 20px auto;
+	font: 12px Verdana,Arial, Helvetica, sans-serif;
+}
+.layer1 {
+margin: 0;
+padding: 0;
+width: 420px;
+}
+ 
+.heading {
+margin: 1px;
+color: #fff;
+padding: 3px 10px;
+cursor: pointer;
+position: relative;
+background-color:#c30;
+}
+.content {
+padding: 5px 10px;
+background-color:#fafafa;
+}
+
+
+p { padding: 5px 0; }
+</style> 
+</head> 
+<body> 
+
+<div class="layer1"> 
+		
+		<p class="heading" id="h1">Toggle 1</p>
+		<div class="content" id="t1" style="width: 400px; background: #BDF381; position:static">
+		
+		</div>
+		
+		<p class="heading">Toggle 2</p>
+		<div class="content" id="d2" style="width: 400px; background: #BDF381; position:static; ">
+		Rabbits are ground dwellers that live in environments ranging from desert to tropical forest and wetland. Their natural
+		geographic range encompasses the middle latitudes of the Western Hemisphere. In the Eastern Hemisphere rabbits are found in 
+		Europe, portions of Central and Southern Africa, the Indian subcontinent, Sumatra, and Japan.
+		</div>
+		
+		
+		
+</div> 
+ 
+
+ 
+
+</script> 
+</div> 
+ 
+ 
+</body> 
+</html> 

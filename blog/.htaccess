@@ -1,0 +1,6 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^blog.nearmygeo.com$
+RewriteRule ^/?$ "http\:\/\/www\.blog\.nearmygeo\.com\/" [R=301,L]
+

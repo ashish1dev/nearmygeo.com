@@ -1,0 +1,25 @@
+body{
+background-color:#223B5B;
+font:11px arial,sans-serif;
+color:white;
+}
+
+td{
+font:11px arial,sans-serif;
+}
+
+input{
+font:11px arial,sans-serif;
+}
+
+a:hover {
+color:#223b5b;
+text-decoration: none;
+background-color:#f3f3f3;
+}
+
+
+
+a{text-decoration:none; color:white;}
+
+/*a:link{color:white;}*/

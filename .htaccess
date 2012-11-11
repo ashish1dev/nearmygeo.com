@@ -1,0 +1,5 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^nearmygeo.com$
+RewriteRule ^/?$ "http\:\/\/www\.nearmygeo\.com\/" [R=301,L]
+
